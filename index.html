@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Latihan CBT Karyawan SGN</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+    h2, h3 {
+        border-left: 6px solid #0b6e4f;
+        padding-left: 10px;
+        color: #0b6e4f;
+    }
+    .box {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin: 6px 0;
+    }
+    input[type="text"], input[type="date"], input[type="datetime-local"],
+    input[type="month"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    textarea {
+        resize: vertical;
+    }
+    .opsi {
+        margin-left: 15px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- IDENTITAS -->
+<h2>Identitas Peserta</h2>
+<div class="box">
+    <label>Nama Lengkap
+        <input type="text" placeholder="Masukkan nama lengkap">
+    </label>
+
+    <label>NIK / NIP
+        <input type="text" placeholder="Nomor Induk">
+    </label>
+
+    <label>Unit Kerja
+        <select>
+            <option>Pabrik Gula</option>
+            <option>Tanaman</option>
+            <option>Keuangan</option>
+            <option>SDM</option>
+            <option>Administrasi</option>
+        </select>
+    </label>
+
+        <label>Tanggal Lahir
+            <input type="date">
+        </label>
+
+</div>
+
+<!-- INPUT TANGGAL -->
+<h2>Tanggal & Waktu Ujian</h2>
+<div class="box">
+    <label>Tanggal Ujian (Date)
+        <input type="date">
+    </label>
+
+    <label>Tanggal & Jam (DateTime)
+        <input type="datetime-local">
+    </label>
+
+    <label>Bulan & Tahun
+        <input type="month">
+    </label>
+</div>
+
+<!-- PILIHAN GANDA MODEL 1 -->
+<h3>Soal Pilihan Ganda – Model 1 (Radio Biasa)</h3>
+<div class="box">
+    <p>1. Tujuan utama pembentukan PT Sinergi Gula Nusantara adalah:</p>
+    <label class="opsi"><input type="radio" name="pg1"> Meningkatkan impor gula</label>
+    <label class="opsi"><input type="radio" name="pg1"> Mendukung swasembada gula nasional</label>
+    <label class="opsi"><input type="radio" name="pg1"> Mengurangi petani tebu</label>
+    <label class="opsi"><input type="radio" name="pg1"> Fokus ekspor</label>
+</div>
+
+<!-- PILIHAN GANDA MODEL 2 -->
+<h3>Soal Pilihan Ganda – Model 2 (Huruf A–D)</h3>
+<div class="box">
+    <p>2. SGN berada di bawah holding:</p>
+    <label class="opsi"><input type="radio" name="pg2"> A. Kementerian Perdagangan</label>
+    <label class="opsi"><input type="radio" name="pg2"> B. PTPN III (Persero)</label>
+    <label class="opsi"><input type="radio" name="pg2"> C. Bulog</label>
+    <label class="opsi"><input type="radio" name="pg2"> D. Swasta</label>
+</div>
+
+<!-- PILIHAN GANDA MODEL 3 -->
+<h3>Soal Pilihan Ganda – Model 3 (Box Tebal)</h3>
+<div class="box">
+    <p>3. Nilai utama AKHLAK yang berkaitan dengan kejujuran adalah:</p>
+    <label class="opsi"><input type="radio" name="pg3"> Kompeten</label>
+    <label class="opsi"><input type="radio" name="pg3"> Loyal</label>
+    <label class="opsi"><input type="radio" name="pg3"> Amanah</label>
+    <label class="opsi"><input type="radio" name="pg3"> Adaptif</label>
+</div>
+
+<!-- CHECKBOX MODEL 1 -->
+<h3>Soal Checkbox – Model 1</h3>
+<div class="box">
+    <p>4. Pilih nilai AKHLAK BUMN (boleh lebih dari satu):</p>
+    <label class="opsi"><input type="checkbox"> Amanah</label>
+    <label class="opsi"><input type="checkbox"> Kompeten</label>
+    <label class="opsi"><input type="checkbox"> Santai</label>
+    <label class="opsi"><input type="checkbox"> Harmonis</label>
+</div>
+
+<!-- CHECKBOX MODEL 2 -->
+<h3>Soal Checkbox – Model 2 (Checklist Horizontal)</h3>
+<div class="box">
+    <p>5. Tugas utama karyawan pabrik gula:</p>
+    <label><input type="checkbox"> Produksi</label>
+    <label><input type="checkbox"> Perawatan Mesin</label>
+    <label><input type="checkbox"> Administrasi</label>
+    <label><input type="checkbox"> Spekulasi</label>
+</div>
+
+<!-- ESSAY MODEL 1 -->
+<h3>Soal Essay – Model 1 (Textarea Besar)</h3>
+<div class="box">
+    <p>6. Jelaskan kontribusi Anda selama bekerja di SGN!</p>
+    <textarea rows="5" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+</div>
+
+<!-- ESSAY MODEL 2 -->
+<h3>Soal Essay – Model 2 (Textarea Sedang)</h3>
+<div class="box">
+    <p>7. Mengapa Anda layak diangkat menjadi karyawan tetap?</p>
+    <textarea rows="4"></textarea>
+</div>
+
+<!-- ESSAY MODEL 3 -->
+<h3>Soal Essay – Model 3 (Input Baris Tunggal)</h3>
+<div class="box">
+    <p>8. Nilai AKHLAK yang paling Anda terapkan:</p>
+    <input type="text" placeholder="Jawaban singkat">
+</div>
+
+</div>
+</body>
+</html>
